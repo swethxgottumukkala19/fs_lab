@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Tables, Forms and Frames</h1>
+    <h2>a. Write a HTML program, to explain the working of tables.</h2>
+    <table border="1" style="border-collapse: collapse; width: 50%; margin: auto;">
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th colspan="2">Contact Info</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Kusuma</td>
+            <td>Email</td>
+            <td>kusuma@example.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan="2">Kamali</td>
+            <td>Phone</td>
+            <td>9148991489</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Email</td>
+            <td>kusuma@example.com</td>
+        </tr>
+    </table>
+    <h2>b. Write a HTML program, to explain the working of tables by preparing a timetable. (Note: Use caption tag to set the caption to the table & also use cell spacing, cell padding, border, rowspan, colspan etc.).</h2>
+    <table border="1" cellpadding="10" cellspacing="2" style="border-collapse: collapse; width: 80%; margin: auto;">
+        <caption><strong>Weekly Class Timetable</strong></caption>
+        <tr>
+            <th>Day</th>
+            <th>9AM - 10AM</th>
+            <th>10AM - 11AM</th>
+            <th>11AM - 12PM</th>
+            <th>12PM - 1PM</th>
+            <th>Lunch</th>
+            <th>2PM - 3PM</th>
+            <th>3PM - 4PM</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Science</td>
+            <td rowspan="5">Break</td>
+            <td rowspan="5">12PM-2PM</td>
+            <td>Physics</td>
+            <td>Games</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Biology</td>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Math</td>
+            <td>Library</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>History</td>
+            <td>Geography</td>
+            <td>Math</td>
+            <td>Civics</td>
+            <td>Drawing</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Physics</td>
+            <td>English</td>
+            <td>Biology</td>
+            <td>Chemistry</td>
+            <td>Games</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Computer</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Club</td>
+        </tr>
+    </table>
+    <h2>c. Write a HTML program, to explain the working of forms by designing Registration form.
+(Note: Include text field, password field, number field, date of birth field, checkboxes,radio buttons, list boxes using select & option tags, text area and two buttons ie:submit and reset. Use tables to provide a better view).</h2>
+    <form action="#" method="post">
+        <table border="1" cellpadding="8" style="margin: auto; border-collapse: collapse;">
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="number" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="not-straight"> Not Straight
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobby1" value="reading"> Reading
+                    <input type="checkbox" name="hobby2" value="sports"> Sports
+                    <input type="checkbox" name="hobby3" value="music"> Music
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="3" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
