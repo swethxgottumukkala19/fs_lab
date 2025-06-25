@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS HTML Task 1</title>
+</head>
+<body>
+    <h1>Lists, Links and Images</h1> <br>
+    <h2>a. Write a HTML program, to explain the working of lists. <br>Note: It should have an ordered list, unordered list, nested lists and ordered list in an unordered list and definition lists.</h2>
+    <h3>Ordered list</h3>
+    <h4>Normal</h4>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h4>Reverse numbering</h4>
+    <ol reversed>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h4>Indexed with small romans</h4>
+    <ol type="i">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h4>Indexed with upper case letters</h4>
+    <ol type="A">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h4>Index starting from a custom number- 19 for example</h4>
+    <ol start="19">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h3>Unordered list</h3>
+    <h4>Different list style types</h4>
+    <h4>Square</h4>
+    <ul style="list-style-type: square;">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <h4>Circle</h4>
+    <ul style="list-style-type: circle;">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <h4>None</h4>
+    <ul style="list-style-type: none;">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>    
+    <h3>Nested list</h3>
+    <ul>
+        <li>item 1
+            <ul>
+                <li>subitem 1</li>
+                <li>subitem 2</li>
+            </ul>
+        </li>
+        <li>item 2
+            <ul>
+                <li>subitem 1</li>
+                <li>subitem 2</li>
+            </ul>
+        </li>
+        <li>item 3
+            <ul>
+                <li>subitem 1</li>
+                <li>subitem 2</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Ordered list in an unordered list</h3>
+    <ul>
+        <li>item 1
+            <ol>
+                <li>subitem 1</li>
+                <li>subitem 2</li>
+            </ol>
+        </li>
+        <li>item 2
+            <ol type="A">
+                <li>subitem 1</li>
+                <li>subitem 2</li>
+            </ol>
+        </li>
+    </ul>
+    <h3>Descriptive list</h3>
+    <dl>
+        <dt>item 1
+            <dd>item 1 description</dd>
+        </dt>
+        <dt>item 2
+            <dd>item 2 description</dd>
+        </dt>
+        <dt>item 3
+            <dd>item 3 description</dd>
+        </dt>
+    </dl>
+    <h2>b. Write a HTML program, to explain the working of hyperlinks using anchor tag and href, target Attributes.</h2>
+    <a href="https://poki.com/?msockid=15ebedc2e0ef62ea3a18fbd4e10763e8" target="_blank">click here for target _blank attribute working</a><br>
+    <a href="https://poki.com/?msockid=15ebedc2e0ef62ea3a18fbd4e10763e8" target="_parent">click here for target _parent attribute working</a><br>
+    <a href="https://poki.com/?msockid=15ebedc2e0ef62ea3a18fbd4e10763e8" target="_self">click here for target _self attribute working</a><br>
+    <a href="https://poki.com/?msockid=15ebedc2e0ef62ea3a18fbd4e10763e8" target="_top">click here for target _top attribute working</a><br>
+    <a href="https://getrickroll.com/" target="display-frame">click here for target as a frame name for an iframe attribute working</a><br>
+    <iframe name= "display-frame" width="100%" height="300" style="border:1px solid black;"></iframe>
+    <h2>c. Create a HTML document that has your image and your friends image with a specific height and width. Also when clicked on the images it should navigate to their respective profiles.</h2>
+    <a href="https://in.linkedin.com/in/kamali-devarasetty">
+        <img src="kamali.jpg" alt="vp" height="50px" width="50px">
+    </a>
+    <br>
+    <a href="https://in.linkedin.com/in/mahitha-kurri">
+        <img src="mahitha.jpg" alt="vp" height="50px" width="50px">
+    </a>
+    <h2>d. Write a HTML program, in such a way that, rather than placing large images on a page,the preferred technique is to use thumbnails by setting the height and width parameters to something like to 100*100 pixels. Each thumbnail image is also a link to a full sized
+version of the image. Create an image gallery using this technique</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 15px; padding: 20px;">
+        <a href="rick.png" target="_blank" style="display: inline-block; border: 2px solid #ccc; padding: 3px; background-color: white;">
+            <img src="rick.png" alt="Photo 1" style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <a href="rick.png" target="_blank" style="display: inline-block; border: 2px solid #ccc; padding: 3px; background-color: white;">
+            <img src="rick.png" alt="Photo 1" style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <a href="rick.png" target="_blank" style="display: inline-block; border: 2px solid #ccc; padding: 3px; background-color: white;">
+            <img src="rick.png" alt="Photo 1" style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+    </div>
+</body>
+</html>
