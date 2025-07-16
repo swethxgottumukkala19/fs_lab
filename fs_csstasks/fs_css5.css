@@ -1,0 +1,49 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+/* Step 1: Button with transition */
+.animated-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Add transition for background-color */
+    transition: background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #0056b3;
+}
+
+/* Step 2: Rotating element */
+.rotating-box {
+    margin: 50px auto;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+
+    /* Apply animation */
+    animation: rotateBox 2s linear infinite;
+}
+
+/* Define @keyframes for rotation */
+@keyframes rotateBox {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

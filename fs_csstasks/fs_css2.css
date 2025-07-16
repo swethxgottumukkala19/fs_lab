@@ -1,0 +1,55 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Container to hold the boxes */
+.container {
+    border: 2px solid black;
+    padding: 10px;
+    /* Using inline-block to place divs next to each other */
+}
+
+/* Step 3: Style boxes with borders and size */
+.box {
+    border: 3px solid;
+    width: 150px;
+    height: 100px;
+    line-height: 100px; /* Vertically center text */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    display: inline-block; /* Inline-block to make divs sit side-by-side */
+    box-sizing: content-box; /* Default */
+    vertical-align: top; /* Align boxes at the top */
+}
+
+/* Different border colors */
+.box1 {
+    border-color: crimson;
+    background-color: crimson;
+    border-radius: 0; /* No rounding */
+}
+
+.box2 {
+    border-color: darkorange;
+    background-color: darkorange;
+    /* Step 4: Rounded corners */
+    border-radius: 15px;
+}
+
+.box3 {
+    border-color: seagreen;
+    background-color: seagreen;
+    border-radius: 15px;
+    /* Step 5: box-sizing border-box */
+    box-sizing: border-box;
+}
+
+/* Extra for visualization */
+h1 {
+    margin-bottom: 30px;
+}

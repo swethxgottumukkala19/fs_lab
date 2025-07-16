@@ -1,0 +1,47 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Nav menu list */
+.nav-menu {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Step 1: Horizontal layout with inline-block */
+.nav-menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Link styling */
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Step 2: Responsive layout for small screens */
+@media (max-width: 600px) {
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+}

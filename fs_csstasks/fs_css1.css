@@ -1,0 +1,44 @@
+/* 2. Element selector: color all <p> tags */
+p {
+    color: darkslategray; /* Sets text color for all paragraphs */
+    font-size: 16px;
+}
+
+/* 3. Class selector: style <li> elements with class "highlight" */
+li.highlight {
+    color: white; /* White text */
+    background-color: darkgreen; /* Green background */
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* 4. Attribute selector: style all <a> tags whose href contains "http" */
+a[href*="http"] {
+    color: orange; /* Orange colored links */
+    text-decoration: underline;
+}
+
+/* 5a. Pseudo-class: change link background on hover */
+a:hover {
+    background-color: lightyellow; /* Highlight background on hover */
+}
+
+/* 5b. Pseudo-element: style the first letter of all paragraphs */
+p::first-letter {
+    font-size: 200%; /* Double the size */
+    color: red;      /* Make it red */
+    font-weight: bold;
+}
+
+/* 6. Use :nth-child(even) to style every even <li> */
+li:nth-child(even) {
+    background-color: #f0f0f0; /* Light gray background on even list items */
+}
+
+/* 7. Use ::before pseudo-element on <h2> to insert a decorative star */
+h2::before {
+    content: "★ ";   /* Unicode star symbol */
+    color: gold;     /* Gold color */
+    font-weight: bold;
+    margin-right: 5px;
+}

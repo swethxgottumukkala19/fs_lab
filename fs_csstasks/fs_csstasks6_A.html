@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog Layout with Floats</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+    header, nav, footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+    }
+    header {
+        text-align: center;
+        font-size: 2em;
+    }
+    nav {
+        overflow: hidden; /* Clear floats here */
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        float: left;
+        margin-right: 20px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden; /* Clear floats */
+    }
+    .content {
+        float: left;
+        width: 65%;
+        background: #f0f0f0;
+        padding: 20px;
+    }
+    .sidebar {
+        float: right;
+        width: 30%;
+        background: #ddd;
+        padding: 20px;
+    }
+    footer {
+        clear: both;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>My Blog</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Blog Post Title</h2>
+            <p>This is the main content area of the blog post.</p>
+            <p>More content here...</p>
+        </div>
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Links, ads, or other info here.</p>
+        </aside>
+    </div>
+
+<footer>© 2025 My Blog</footer>
+
+</body>
+</html>
